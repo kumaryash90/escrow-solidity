@@ -1,6 +1,7 @@
 # escrow-solidity
 
 Live at: https://escrowproject.netlify.app/
+
 Frontend source code: https://github.com/kumaryash90/escrow-frontend
 
 ## About
