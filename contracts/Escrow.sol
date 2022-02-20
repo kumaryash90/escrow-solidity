@@ -16,7 +16,7 @@ contract Escrow {
     mapping(uint=>Payment) public payments;
 
     event Created(uint);
-	event Approved(uint);
+    event Approved(uint);
     event Unlocked(uint);
     event Depositor_Withdraw(uint);
     event Beneficiary_Withdraw(uint);
