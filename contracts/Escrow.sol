@@ -44,8 +44,8 @@ contract Escrow {
         payments[_id] = payment;
         emit Created(_id);
     }
-
-	function approvePayment(uint _id) external {
+    
+    function approvePayment(uint _id) external {
         Payment storage payment = payments[_id];
 		require(msg.sender == payment.arbiter, "not arbiter");
         require(!payment.isApproved && !payment.isUnlocked, "either already approved or unlocked");
