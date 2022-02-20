@@ -21,9 +21,9 @@ contract Escrow {
     event Depositor_Withdraw(uint);
     event Beneficiary_Withdraw(uint);
 
-    function getBalance() public view returns(uint) {
+    /*function getBalance() public view returns(uint) {
         return address(this).balance;
-    }
+    }*/
 
     function createPayment(address _arbiter, address _beneficiary) external payable {
         require(msg.sender != _arbiter, "depositor same as arbiter");
